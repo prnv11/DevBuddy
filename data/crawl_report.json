@@ -1,0 +1,65 @@
+{
+  "pages_indexed": 211,
+  "pages_by_framework": {
+    "fastapi": 140,
+    "flask": 71
+  },
+  "chunks": 2955,
+  "chunks_by_framework": {
+    "fastapi": 2032,
+    "flask": 923
+  },
+  "chunks_with_code": 1677,
+  "content_edges": 493,
+  "nav_edges": 19709,
+  "fetched": 212,
+  "skipped": {
+    "off-site": 388,
+    "denied-section": 22,
+    "out-of-scope": 12,
+    "http-404": 1
+  },
+  "skip_examples": {
+    "off-site": [
+      "https://github.com/fastapi/fastapi/actions/?query=workflow%3ATest+event%3Apush+branch%3Amaster",
+      "https://coverage-badge.samuelcolvin.workers.dev/redirect/fastapi/fastapi/",
+      "https://pypi.org/project/fastapi/",
+      "https://github.com/fastapi/fastapi/",
+      "https://github.com/OAI/OpenAPI-Specification/"
+    ],
+    "denied-section": [
+      "https://fastapi.tiangolo.com/ai-development/",
+      "https://fastapi.tiangolo.com/fastapi-people/",
+      "https://fastapi.tiangolo.com/de/",
+      "https://fastapi.tiangolo.com/es/",
+      "https://fastapi.tiangolo.com/fr/"
+    ],
+    "out-of-scope": [
+      "https://fastapi.tiangolo.com/learn/",
+      "https://fastapi.tiangolo.com/resources/",
+      "https://fastapi.tiangolo.com/about/",
+      "https://fastapi.tiangolo.com/editor-support/",
+      "https://fastapi.tiangolo.com/help-fastapi/"
+    ],
+    "http-404": [
+      "https://fastapi.tiangolo.com/advanced/clients/"
+    ]
+  },
+  "min_seconds_between_requests_per_host": {
+    "https://fastapi.tiangolo.com": 1.0,
+    "https://flask.palletsprojects.com": 1.0
+  },
+  "elapsed_seconds": 157.5,
+  "template_removed": {
+    "sentences": [
+      "AI coding agents Use the official FastAPI skill for your installed version.",
+      "Install it from your project directory: See Develop with AI ."
+    ],
+    "code_blocks": [
+      "uvx library-skills"
+    ],
+    "chunks_dropped": 12
+  },
+  "delay": 1.0,
+  "mirror": {}
+}

@@ -1,0 +1,153 @@
+{
+  "judgments": "provisional (author gold patterns)",
+  "n_terms": 20,
+  "prf_gate": 0.516460490693596,
+  "explicit": [
+    {
+      "system": "bm25f",
+      "feedback": "explicit, 1 round",
+      "judged removed": 5,
+      "nDCG@10 before": 0.3166580698035094,
+      "nDCG@10 after": 0.4137831337385325,
+      "MAP before": 0.2740122915333876,
+      "MAP after": 0.3800455193239427,
+      "delta nDCG": 0.09712506393502307,
+      "p (bootstrap)": 0.0022,
+      "wins/losses": "32/16"
+    },
+    {
+      "system": "bm25f",
+      "feedback": "explicit, 2 rounds",
+      "judged removed": 10,
+      "nDCG@10 before": 0.2369924554568886,
+      "nDCG@10 after": 0.37616348325785,
+      "MAP before": 0.2046161823368368,
+      "MAP after": 0.32952538598931685,
+      "delta nDCG": 0.13917102780096138,
+      "p (bootstrap)": 0.0007,
+      "wins/losses": "30/13"
+    },
+    {
+      "system": "lsa",
+      "feedback": "explicit, 1 round",
+      "judged removed": 5,
+      "nDCG@10 before": 0.2902684104170519,
+      "nDCG@10 after": 0.3974620403830682,
+      "MAP before": 0.28191965005424785,
+      "MAP after": 0.37961818570550565,
+      "delta nDCG": 0.10719362996601628,
+      "p (bootstrap)": 0.0,
+      "wins/losses": "31/6"
+    },
+    {
+      "system": "lsa",
+      "feedback": "explicit, 2 rounds",
+      "judged removed": 10,
+      "nDCG@10 before": 0.2432981131486533,
+      "nDCG@10 after": 0.41877800503033197,
+      "MAP before": 0.2299466875516044,
+      "MAP after": 0.37551018138084313,
+      "delta nDCG": 0.17547989188167867,
+      "p (bootstrap)": 0.0,
+      "wins/losses": "38/5"
+    },
+    {
+      "system": "hybrid_lsa",
+      "feedback": "explicit, 1 round",
+      "judged removed": 5,
+      "nDCG@10 before": 0.32056942889376505,
+      "nDCG@10 after": 0.40963492788559047,
+      "MAP before": 0.27970874374173044,
+      "MAP after": 0.3826084978676222,
+      "delta nDCG": 0.08906549899182542,
+      "p (bootstrap)": 0.0023,
+      "wins/losses": "28/18"
+    },
+    {
+      "system": "hybrid_lsa",
+      "feedback": "explicit, 2 rounds",
+      "judged removed": 10,
+      "nDCG@10 before": 0.254616770026976,
+      "nDCG@10 after": 0.366646359053056,
+      "MAP before": 0.228306096571145,
+      "MAP after": 0.34507646070578313,
+      "delta nDCG": 0.11202958902607996,
+      "p (bootstrap)": 0.0044,
+      "wins/losses": "27/16"
+    },
+    {
+      "system": "minilm",
+      "feedback": "explicit, 1 round",
+      "judged removed": 5,
+      "nDCG@10 before": 0.24849364592615,
+      "nDCG@10 after": 0.343677532383138,
+      "MAP before": 0.20826777145816655,
+      "MAP after": 0.285152334345282,
+      "delta nDCG": 0.09518388645698797,
+      "p (bootstrap)": 0.0,
+      "wins/losses": "37/9"
+    },
+    {
+      "system": "minilm",
+      "feedback": "explicit, 2 rounds",
+      "judged removed": 10,
+      "nDCG@10 before": 0.16922064548592183,
+      "nDCG@10 after": 0.32561318951588086,
+      "MAP before": 0.14516104713260392,
+      "MAP after": 0.2729850584226482,
+      "delta nDCG": 0.15639254402995903,
+      "p (bootstrap)": 0.0,
+      "wins/losses": "37/9"
+    },
+    {
+      "system": "hybrid_minilm",
+      "feedback": "explicit, 1 round",
+      "judged removed": 5,
+      "nDCG@10 before": 0.3103976960409243,
+      "nDCG@10 after": 0.4395091804603598,
+      "MAP before": 0.2790438684276133,
+      "MAP after": 0.3986213932497647,
+      "delta nDCG": 0.12911148441943548,
+      "p (bootstrap)": 0.0003,
+      "wins/losses": "34/12"
+    },
+    {
+      "system": "hybrid_minilm",
+      "feedback": "explicit, 2 rounds",
+      "judged removed": 10,
+      "nDCG@10 before": 0.22466103093362477,
+      "nDCG@10 after": 0.37460194119310547,
+      "MAP before": 0.21703854545385384,
+      "MAP after": 0.3457553895163035,
+      "delta nDCG": 0.1499409102594807,
+      "p (bootstrap)": 0.0001,
+      "wins/losses": "32/14"
+    }
+  ],
+  "prf": [
+    {
+      "variant": "PRF, always on",
+      "applied to": "60/60",
+      "nDCG@10 base": 0.4491920681298586,
+      "nDCG@10 PRF": 0.45060400886003826,
+      "delta": 0.0014119407301796394,
+      "p": 0.9195,
+      "residual delta": 0.027693143926540376,
+      "residual p": 0.2205,
+      "MAP base": 0.3508076821339737,
+      "MAP PRF": 0.379723437990477
+    },
+    {
+      "variant": "PRF, confidence gate 0.52 (dev)",
+      "applied to": "13/60",
+      "nDCG@10 base": 0.4491920681298586,
+      "nDCG@10 PRF": 0.4505743038763119,
+      "delta": 0.0013822357464532975,
+      "p": 0.8457,
+      "residual delta": 0.019167637256573666,
+      "residual p": 0.0929,
+      "MAP base": 0.3508076821339737,
+      "MAP PRF": 0.35859965608120226
+    }
+  ]
+}

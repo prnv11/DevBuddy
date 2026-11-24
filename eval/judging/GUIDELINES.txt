@@ -1,0 +1,7 @@
+Judge each (query, chunk) pair on what the chunk says, using its URL if needed.
+  2 = answers the query (for "equivalent of X" queries: shows the counterpart
+      concept in the target framework)
+  1 = related / partially useful (right topic but does not answer; or shows the
+      source-framework concept for an "equivalent" query)
+  0 = not relevant
+Do not look at which system retrieved it. Judge independently of other judges.

@@ -1,0 +1,505 @@
+{
+  "judgments": "provisional (author gold patterns)",
+  "rows": [
+    {
+      "system": "BM25F tuned",
+      "beta": 0.0,
+      "nDCG@10": 0.4491920681298586,
+      "P@5": 0.4666666666666667,
+      "R@10": 0.25214125625024103,
+      "MAP": 0.3508076821339737,
+      "MRR": 0.7360934272698978,
+      "api": 0.687429603485532,
+      "howto": 0.4764146814252538,
+      "cross": 0.16832756358687126
+    },
+    {
+      "system": "+ PageRank",
+      "beta": 0.3,
+      "nDCG@10": 0.4212184211347069,
+      "P@5": 0.4133333333333333,
+      "R@10": 0.22108991669850947,
+      "MAP": 0.306674256504269,
+      "MRR": 0.7073049789062098,
+      "api": 0.6886981350626342,
+      "howto": 0.4256968512696249,
+      "cross": 0.1347109836930317
+    },
+    {
+      "system": "+ personalised PageRank (user stack)",
+      "beta": 0.3,
+      "nDCG@10": 0.4488283639800399,
+      "P@5": 0.4333333333333333,
+      "R@10": 0.24173480431045843,
+      "MAP": 0.32982640773531446,
+      "MRR": 0.7249153452804121,
+      "api": 0.7047894940843346,
+      "howto": 0.46892069843551937,
+      "cross": 0.1571882784194631
+    },
+    {
+      "system": "+ HITS authority",
+      "beta": 0.1,
+      "nDCG@10": 0.44687883535336415,
+      "P@5": 0.46333333333333326,
+      "R@10": 0.2518345695265063,
+      "MAP": 0.3440930981182861,
+      "MRR": 0.7332810245310244,
+      "api": 0.6720081255777619,
+      "howto": 0.4931335608625417,
+      "cross": 0.15877699113332813
+    },
+    {
+      "system": "+ personalised PageRank (query cluster)",
+      "beta": 0.0,
+      "nDCG@10": 0.4491920681298586,
+      "P@5": 0.4666666666666667,
+      "R@10": 0.25214125625024103,
+      "MAP": 0.3508076821339737,
+      "MRR": 0.7360934272698978,
+      "api": 0.687429603485532,
+      "howto": 0.4764146814252538,
+      "cross": 0.16832756358687126
+    },
+    {
+      "system": "+ PageRank (beta=0.1 fixed)",
+      "beta": 0.1,
+      "nDCG@10": 0.437339640158796,
+      "P@5": 0.45999999999999996,
+      "R@10": 0.2435047022584239,
+      "MAP": 0.3368264674896854,
+      "MRR": 0.7260521885521884,
+      "api": 0.6792287489818256,
+      "howto": 0.4595530849163453,
+      "cross": 0.15816782350778946
+    },
+    {
+      "system": "+ personalised PageRank (user stack) (beta=0.1 fixed)",
+      "beta": 0.1,
+      "nDCG@10": 0.4464728416810289,
+      "P@5": 0.4666666666666667,
+      "R@10": 0.2484082940370157,
+      "MAP": 0.3454148783481444,
+      "MRR": 0.7311607142857142,
+      "api": 0.6806306699260041,
+      "howto": 0.4762767603074862,
+      "cross": 0.16704974399391767
+    },
+    {
+      "system": "+ HITS authority (beta=0.1 fixed)",
+      "beta": 0.1,
+      "nDCG@10": 0.44687883535336415,
+      "P@5": 0.46333333333333326,
+      "R@10": 0.2518345695265063,
+      "MAP": 0.3440930981182861,
+      "MRR": 0.7332810245310244,
+      "api": 0.6720081255777619,
+      "howto": 0.4931335608625417,
+      "cross": 0.15877699113332813
+    },
+    {
+      "system": "+ personalised PageRank (query cluster) (beta=0.1 fixed)",
+      "beta": 0.1,
+      "nDCG@10": 0.45316451121341,
+      "P@5": 0.48000000000000004,
+      "R@10": 0.25697021278275795,
+      "MAP": 0.3527624211788381,
+      "MRR": 0.7336805706370924,
+      "api": 0.6833272158392132,
+      "howto": 0.503459564534651,
+      "cross": 0.1552987105680347
+    }
+  ],
+  "betas": {
+    "bm25f+pr": 0.3,
+    "bm25f+ppr": 0.3,
+    "bm25f+hits": 0.1,
+    "bm25f+pprc": 0.0
+  },
+  "significance": {
+    "+ PageRank vs BM25F tuned": {
+      "delta": -0.027973646995151702,
+      "p_bootstrap": 0.0674,
+      "p_wilcoxon": 0.09353370867350502,
+      "wins": 19,
+      "losses": 27,
+      "n": 60
+    },
+    "+ personalised PageRank (user stack) vs BM25F tuned": {
+      "delta": -0.0003637041498187332,
+      "p_bootstrap": 0.9777,
+      "p_wilcoxon": 0.978209741838084,
+      "wins": 24,
+      "losses": 22,
+      "n": 60
+    },
+    "+ HITS authority vs BM25F tuned": {
+      "delta": -0.0023132327764944782,
+      "p_bootstrap": 0.8062,
+      "p_wilcoxon": 0.46619403462565867,
+      "wins": 11,
+      "losses": 17,
+      "n": 60
+    },
+    "+ personalised PageRank (query cluster) vs BM25F tuned": {
+      "delta": 0.0,
+      "p_bootstrap": 1.0,
+      "p_wilcoxon": 1.0,
+      "wins": 0,
+      "losses": 0,
+      "n": 60
+    },
+    "+ PageRank (beta=0.1 fixed) vs BM25F tuned": {
+      "delta": -0.011852427971062618,
+      "p_bootstrap": 0.0933,
+      "p_wilcoxon": 0.1687382220433694,
+      "wins": 13,
+      "losses": 21,
+      "n": 60
+    },
+    "+ personalised PageRank (user stack) (beta=0.1 fixed) vs BM25F tuned": {
+      "delta": -0.0027192264488297146,
+      "p_bootstrap": 0.6896,
+      "p_wilcoxon": 0.5902041413952115,
+      "wins": 16,
+      "losses": 18,
+      "n": 60
+    },
+    "+ HITS authority (beta=0.1 fixed) vs BM25F tuned": {
+      "delta": -0.0023132327764944782,
+      "p_bootstrap": 0.8062,
+      "p_wilcoxon": 0.46619403462565867,
+      "wins": 11,
+      "losses": 17,
+      "n": 60
+    },
+    "+ personalised PageRank (query cluster) (beta=0.1 fixed) vs BM25F tuned": {
+      "delta": 0.00397244308355138,
+      "p_bootstrap": 0.5459,
+      "p_wilcoxon": 0.6806858204824731,
+      "wins": 18,
+      "losses": 13,
+      "n": 60
+    }
+  },
+  "type_significance": {
+    "[api] + PageRank vs BM25F tuned": {
+      "delta": 0.001268531577102272,
+      "p_bootstrap": 0.9669,
+      "p_wilcoxon": 0.6050949464540121,
+      "wins": 9,
+      "losses": 7,
+      "n": 20
+    },
+    "[api] + personalised PageRank (user stack) vs BM25F tuned": {
+      "delta": 0.017359890598802608,
+      "p_bootstrap": 0.5212,
+      "p_wilcoxon": 0.3066241230648338,
+      "wins": 10,
+      "losses": 5,
+      "n": 20
+    },
+    "[api] + HITS authority vs BM25F tuned": {
+      "delta": -0.015421477907770043,
+      "p_bootstrap": 0.2207,
+      "p_wilcoxon": 0.34523107177184,
+      "wins": 2,
+      "losses": 3,
+      "n": 20
+    },
+    "[api] + personalised PageRank (query cluster) vs BM25F tuned": {
+      "delta": 0.0,
+      "p_bootstrap": 1.0,
+      "p_wilcoxon": 1.0,
+      "wins": 0,
+      "losses": 0,
+      "n": 20
+    },
+    "[api] + PageRank (beta=0.1 fixed) vs BM25F tuned": {
+      "delta": -0.008200854503706334,
+      "p_bootstrap": 0.5415,
+      "p_wilcoxon": 0.779434528427275,
+      "wins": 4,
+      "losses": 4,
+      "n": 20
+    },
+    "[api] + personalised PageRank (user stack) (beta=0.1 fixed) vs BM25F tuned": {
+      "delta": -0.0067989335595278755,
+      "p_bootstrap": 0.5129,
+      "p_wilcoxon": 0.6784023758521882,
+      "wins": 5,
+      "losses": 4,
+      "n": 20
+    },
+    "[api] + HITS authority (beta=0.1 fixed) vs BM25F tuned": {
+      "delta": -0.015421477907770043,
+      "p_bootstrap": 0.2207,
+      "p_wilcoxon": 0.34523107177184,
+      "wins": 2,
+      "losses": 3,
+      "n": 20
+    },
+    "[api] + personalised PageRank (query cluster) (beta=0.1 fixed) vs BM25F tuned": {
+      "delta": -0.004102387646318761,
+      "p_bootstrap": 0.5777,
+      "p_wilcoxon": 0.8589549227374824,
+      "wins": 5,
+      "losses": 4,
+      "n": 20
+    },
+    "[howto] + PageRank vs BM25F tuned": {
+      "delta": -0.05071783015562886,
+      "p_bootstrap": 0.0214,
+      "p_wilcoxon": 0.04862480166721016,
+      "wins": 6,
+      "losses": 13,
+      "n": 21
+    },
+    "[howto] + personalised PageRank (user stack) vs BM25F tuned": {
+      "delta": -0.007493982989734416,
+      "p_bootstrap": 0.7416,
+      "p_wilcoxon": 0.9404809859004396,
+      "wins": 10,
+      "losses": 10,
+      "n": 21
+    },
+    "[howto] + HITS authority vs BM25F tuned": {
+      "delta": 0.016718879437287892,
+      "p_bootstrap": 0.3199,
+      "p_wilcoxon": 0.463071015014588,
+      "wins": 7,
+      "losses": 6,
+      "n": 21
+    },
+    "[howto] + personalised PageRank (query cluster) vs BM25F tuned": {
+      "delta": 0.0,
+      "p_bootstrap": 1.0,
+      "p_wilcoxon": 1.0,
+      "wins": 0,
+      "losses": 0,
+      "n": 21
+    },
+    "[howto] + PageRank (beta=0.1 fixed) vs BM25F tuned": {
+      "delta": -0.016861596508908505,
+      "p_bootstrap": 0.1674,
+      "p_wilcoxon": 0.25529050519961505,
+      "wins": 5,
+      "losses": 11,
+      "n": 21
+    },
+    "[howto] + personalised PageRank (user stack) (beta=0.1 fixed) vs BM25F tuned": {
+      "delta": -0.00013792111776755878,
+      "p_bootstrap": 0.9913,
+      "p_wilcoxon": 0.9249783071207602,
+      "wins": 6,
+      "losses": 8,
+      "n": 21
+    },
+    "[howto] + HITS authority (beta=0.1 fixed) vs BM25F tuned": {
+      "delta": 0.016718879437287892,
+      "p_bootstrap": 0.3199,
+      "p_wilcoxon": 0.463071015014588,
+      "wins": 7,
+      "losses": 6,
+      "n": 21
+    },
+    "[howto] + personalised PageRank (query cluster) (beta=0.1 fixed) vs BM25F tuned": {
+      "delta": 0.027044883109397233,
+      "p_bootstrap": 0.0435,
+      "p_wilcoxon": 0.03924327615032667,
+      "wins": 11,
+      "losses": 2,
+      "n": 21
+    },
+    "[cross] + PageRank vs BM25F tuned": {
+      "delta": -0.033616579893839565,
+      "p_bootstrap": 0.2099,
+      "p_wilcoxon": 0.24774620591207197,
+      "wins": 4,
+      "losses": 7,
+      "n": 19
+    },
+    "[cross] + personalised PageRank (user stack) vs BM25F tuned": {
+      "delta": -0.01113928516740817,
+      "p_bootstrap": 0.6707,
+      "p_wilcoxon": 0.5336947142111965,
+      "wins": 4,
+      "losses": 7,
+      "n": 19
+    },
+    "[cross] + HITS authority vs BM25F tuned": {
+      "delta": -0.009550572453543127,
+      "p_bootstrap": 0.6142,
+      "p_wilcoxon": 0.24112136827741826,
+      "wins": 2,
+      "losses": 8,
+      "n": 19
+    },
+    "[cross] + personalised PageRank (query cluster) vs BM25F tuned": {
+      "delta": 0.0,
+      "p_bootstrap": 1.0,
+      "p_wilcoxon": 1.0,
+      "wins": 0,
+      "losses": 0,
+      "n": 19
+    },
+    "[cross] + PageRank (beta=0.1 fixed) vs BM25F tuned": {
+      "delta": -0.010159740079081797,
+      "p_bootstrap": 0.3588,
+      "p_wilcoxon": 0.3328797545683888,
+      "wins": 4,
+      "losses": 6,
+      "n": 19
+    },
+    "[cross] + personalised PageRank (user stack) (beta=0.1 fixed) vs BM25F tuned": {
+      "delta": -0.0012778195929535885,
+      "p_bootstrap": 0.9229,
+      "p_wilcoxon": 0.789675102094056,
+      "wins": 5,
+      "losses": 6,
+      "n": 19
+    },
+    "[cross] + HITS authority (beta=0.1 fixed) vs BM25F tuned": {
+      "delta": -0.009550572453543127,
+      "p_bootstrap": 0.6142,
+      "p_wilcoxon": 0.24112136827741826,
+      "wins": 2,
+      "losses": 8,
+      "n": 19
+    },
+    "[cross] + personalised PageRank (query cluster) (beta=0.1 fixed) vs BM25F tuned": {
+      "delta": -0.01302885301883655,
+      "p_bootstrap": 0.1491,
+      "p_wilcoxon": 0.10974463874701328,
+      "wins": 2,
+      "losses": 7,
+      "n": 19
+    }
+  },
+  "check": {
+    "max_abs_diff_pagerank": 8.919356919712129e-10,
+    "max_abs_diff_personalised": 3.4118624037127177e-09,
+    "iterations": 93,
+    "final_delta": 8.837529021955837e-09
+  },
+  "graph": {
+    "pages": 211,
+    "content_edges": 493,
+    "nav_edges": 19709,
+    "dangling_pages_content": 63,
+    "gini_pagerank_content": 0.5316698767736454,
+    "gini_pagerank_nav": 0.3486971657349793,
+    "top_content": [
+      [
+        "https://flask.palletsprojects.com/en/stable/api/",
+        0.08779345030103565
+      ],
+      [
+        "https://fastapi.tiangolo.com/advanced/behind-a-proxy/",
+        0.04398470530469153
+      ],
+      [
+        "https://flask.palletsprojects.com/en/stable/deploying/",
+        0.02649902159905546
+      ],
+      [
+        "https://fastapi.tiangolo.com/advanced/sub-applications/",
+        0.024481988123582005
+      ],
+      [
+        "https://fastapi.tiangolo.com/deployment/https/",
+        0.021604668720578993
+      ],
+      [
+        "https://flask.palletsprojects.com/en/stable/reqcontext/",
+        0.018242166047900948
+      ],
+      [
+        "https://flask.palletsprojects.com/en/stable/cli/",
+        0.01763252026725331
+      ],
+      [
+        "https://flask.palletsprojects.com/en/stable/deploying/proxy_fix/",
+        0.016477244625929924
+      ],
+      [
+        "https://flask.palletsprojects.com/en/stable/config/",
+        0.015388970470791413
+      ],
+      [
+        "https://flask.palletsprojects.com/en/stable/appcontext/",
+        0.014881240602528288
+      ]
+    ],
+    "top_nav": [
+      [
+        "https://flask.palletsprojects.com/en/stable/",
+        0.08091597819656193
+      ],
+      [
+        "https://flask.palletsprojects.com/en/stable/installation/",
+        0.08076393589825681
+      ],
+      [
+        "https://flask.palletsprojects.com/en/stable/quickstart/",
+        0.039792185168228744
+      ],
+      [
+        "https://flask.palletsprojects.com/en/stable/tutorial/",
+        0.01678804737544439
+      ],
+      [
+        "https://flask.palletsprojects.com/en/stable/patterns/",
+        0.00898181594403011
+      ]
+    ]
+  },
+  "hits_example": {
+    "query": "dependencies",
+    "base_set": 128,
+    "top_authorities": [
+      [
+        "https://fastapi.tiangolo.com/python-types/",
+        0.2629
+      ],
+      [
+        "https://fastapi.tiangolo.com/tutorial/bigger-applications/",
+        0.2292
+      ],
+      [
+        "https://fastapi.tiangolo.com/tutorial/response-model/",
+        0.2281
+      ],
+      [
+        "https://fastapi.tiangolo.com/advanced/additional-responses/",
+        0.2236
+      ],
+      [
+        "https://fastapi.tiangolo.com/tutorial/dependencies/dependencies-in-path-operation-decorators/",
+        0.2221
+      ]
+    ],
+    "top_hubs": [
+      [
+        "https://fastapi.tiangolo.com/reference/fastapi/",
+        0.7852
+      ],
+      [
+        "https://fastapi.tiangolo.com/reference/apirouter/",
+        0.5701
+      ],
+      [
+        "https://fastapi.tiangolo.com/reference/parameters/",
+        0.072
+      ],
+      [
+        "https://fastapi.tiangolo.com/advanced/custom-response/",
+        0.0679
+      ],
+      [
+        "https://fastapi.tiangolo.com/advanced/response-directly/",
+        0.0663
+      ]
+    ]
+  }
+}

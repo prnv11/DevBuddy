@@ -1,0 +1,999 @@
+{
+  "quality": {
+    "tfidf/kmeans": {
+      "flask": {
+        "k": 55,
+        "silhouette": 0.08866963535547256,
+        "sections": 4,
+        "purity": 0.8656554712892741,
+        "NMI": 0.142942796093523,
+        "ARI": 0.0075561094233732905,
+        "RI": 0.3217392121794676,
+        "purity_random": 0.8244853737811484,
+        "NMI_random": 0.042026087681693435
+      },
+      "fastapi": {
+        "k": 50,
+        "silhouette": 0.13316738605499268,
+        "sections": 10,
+        "purity": 0.7372047244094488,
+        "NMI": 0.4385906718731334,
+        "ARI": 0.14076276113479066,
+        "RI": 0.8261518316488135,
+        "purity_random": 0.31348425196850394,
+        "NMI_random": 0.03980137240706909
+      }
+    },
+    "tfidf/kmeans/centred": {
+      "flask": {
+        "k": 55,
+        "silhouette": 0.08959195762872696,
+        "sections": 4,
+        "purity": 0.8721560130010835,
+        "NMI": 0.14469328082881278,
+        "ARI": 0.008618776763067684,
+        "RI": 0.3223690549772857,
+        "purity_random": 0.8244853737811484,
+        "NMI_random": 0.042026087681693435
+      },
+      "fastapi": {
+        "k": 55,
+        "silhouette": 0.14122840762138367,
+        "sections": 10,
+        "purity": 0.7391732283464567,
+        "NMI": 0.434475845051256,
+        "ARI": 0.13102022944264338,
+        "RI": 0.8261954469502243,
+        "purity_random": 0.31643700787401574,
+        "NMI_random": 0.043773184573480894
+      }
+    },
+    "tfidf/hac": {
+      "flask": {
+        "k": 60,
+        "silhouette": 0.09937550872564316,
+        "sections": 4,
+        "purity": 0.8959913326110509,
+        "NMI": 0.17788283268427824,
+        "ARI": 0.017036465966456367,
+        "RI": 0.3314312707548478,
+        "purity_random": 0.8244853737811484,
+        "NMI_random": 0.04516538474116314
+      },
+      "fastapi": {
+        "k": 60,
+        "silhouette": 0.14207302033901215,
+        "sections": 10,
+        "purity": 0.7303149606299213,
+        "NMI": 0.46058287690098515,
+        "ARI": 0.2771376201757201,
+        "RI": 0.8356817750070754,
+        "purity_random": 0.3174212598425197,
+        "NMI_random": 0.04322806099394262
+      }
+    },
+    "tfidf/hac/centred": {
+      "flask": {
+        "k": 60,
+        "silhouette": 0.1001683846116066,
+        "sections": 4,
+        "purity": 0.8927410617551462,
+        "NMI": 0.17623598981865277,
+        "ARI": 0.01625092448349523,
+        "RI": 0.3302467902693988,
+        "purity_random": 0.8244853737811484,
+        "NMI_random": 0.04516538474116314
+      },
+      "fastapi": {
+        "k": 60,
+        "silhouette": 0.15109504759311676,
+        "sections": 10,
+        "purity": 0.7682086614173228,
+        "NMI": 0.49196668269430677,
+        "ARI": 0.2924513315897339,
+        "RI": 0.8464881928532937,
+        "purity_random": 0.3174212598425197,
+        "NMI_random": 0.04322806099394262
+      }
+    },
+    "lsa/kmeans": {
+      "flask": {
+        "k": 55,
+        "silhouette": 0.27222105860710144,
+        "sections": 4,
+        "purity": 0.8851570964247021,
+        "NMI": 0.1621711643706499,
+        "ARI": 0.009081819582335707,
+        "RI": 0.3225570677527538,
+        "purity_random": 0.8244853737811484,
+        "NMI_random": 0.042026087681693435
+      },
+      "fastapi": {
+        "k": 60,
+        "silhouette": 0.28632280230522156,
+        "sections": 10,
+        "purity": 0.7559055118110236,
+        "NMI": 0.4504011581591717,
+        "ARI": 0.11446894251465686,
+        "RI": 0.8247314266662015,
+        "purity_random": 0.3174212598425197,
+        "NMI_random": 0.04322806099394262
+      }
+    },
+    "lsa/kmeans/centred": {
+      "flask": {
+        "k": 60,
+        "silhouette": 0.26221024990081787,
+        "sections": 4,
+        "purity": 0.875406283856988,
+        "NMI": 0.1564579462761752,
+        "ARI": 0.008095730151803279,
+        "RI": 0.32123627800509047,
+        "purity_random": 0.8244853737811484,
+        "NMI_random": 0.04516538474116314
+      },
+      "fastapi": {
+        "k": 60,
+        "silhouette": 0.26764389872550964,
+        "sections": 10,
+        "purity": 0.749507874015748,
+        "NMI": 0.4398269860083265,
+        "ARI": 0.1293316648080915,
+        "RI": 0.8266243307474306,
+        "purity_random": 0.3174212598425197,
+        "NMI_random": 0.04322806099394262
+      }
+    },
+    "lsa/hac": {
+      "flask": {
+        "k": 60,
+        "silhouette": 0.253908634185791,
+        "sections": 4,
+        "purity": 0.8905742145178764,
+        "NMI": 0.17016803681019232,
+        "ARI": 0.011858314558282733,
+        "RI": 0.3257720862132582,
+        "purity_random": 0.8244853737811484,
+        "NMI_random": 0.04516538474116314
+      },
+      "fastapi": {
+        "k": 60,
+        "silhouette": 0.30455365777015686,
+        "sections": 10,
+        "purity": 0.7795275590551181,
+        "NMI": 0.4964400813392237,
+        "ARI": 0.28144316887238024,
+        "RI": 0.8459846784292289,
+        "purity_random": 0.3174212598425197,
+        "NMI_random": 0.04322806099394262
+      }
+    },
+    "lsa/hac/centred": {
+      "flask": {
+        "k": 60,
+        "silhouette": 0.2565585970878601,
+        "sections": 4,
+        "purity": 0.8819068255687974,
+        "NMI": 0.15625114615539845,
+        "ARI": 0.011255675190724302,
+        "RI": 0.3252362498031741,
+        "purity_random": 0.8244853737811484,
+        "NMI_random": 0.04516538474116314
+      },
+      "fastapi": {
+        "k": 60,
+        "silhouette": 0.29915565252304077,
+        "sections": 10,
+        "purity": 0.781003937007874,
+        "NMI": 0.4972557168693646,
+        "ARI": 0.2819787645354632,
+        "RI": 0.8462405548641723,
+        "purity_random": 0.3174212598425197,
+        "NMI_random": 0.04322806099394262
+      }
+    },
+    "minilm/kmeans": {
+      "flask": {
+        "k": 35,
+        "silhouette": 0.1456221491098404,
+        "sections": 4,
+        "purity": 0.8764897074756229,
+        "NMI": 0.14788413926522814,
+        "ARI": 0.013630843985774379,
+        "RI": 0.3333301997870755,
+        "purity_random": 0.8244853737811484,
+        "NMI_random": 0.028066429473258
+      },
+      "fastapi": {
+        "k": 60,
+        "silhouette": 0.17819075286388397,
+        "sections": 10,
+        "purity": 0.71998031496063,
+        "NMI": 0.41286271363063776,
+        "ARI": 0.12558945328460316,
+        "RI": 0.8249805184987031,
+        "purity_random": 0.3174212598425197,
+        "NMI_random": 0.04322806099394262
+      }
+    },
+    "minilm/kmeans/centred": {
+      "flask": {
+        "k": 45,
+        "silhouette": 0.1549338698387146,
+        "sections": 4,
+        "purity": 0.8797399783315276,
+        "NMI": 0.15450540874418037,
+        "ARI": 0.011048451421756766,
+        "RI": 0.3262444683116218,
+        "purity_random": 0.8244853737811484,
+        "NMI_random": 0.03530546550927008
+      },
+      "fastapi": {
+        "k": 60,
+        "silhouette": 0.20011791586875916,
+        "sections": 10,
+        "purity": 0.7283464566929134,
+        "NMI": 0.4104907908612211,
+        "ARI": 0.11022537854711772,
+        "RI": 0.8239405358672854,
+        "purity_random": 0.3174212598425197,
+        "NMI_random": 0.04322806099394262
+      }
+    },
+    "minilm/hac": {
+      "flask": {
+        "k": 55,
+        "silhouette": 0.08617742359638214,
+        "sections": 4,
+        "purity": 0.8797399783315276,
+        "NMI": 0.16200246624270134,
+        "ARI": 0.02569532957143914,
+        "RI": 0.38017123263525754,
+        "purity_random": 0.8244853737811484,
+        "NMI_random": 0.042026087681693435
+      },
+      "fastapi": {
+        "k": 60,
+        "silhouette": 0.19867081940174103,
+        "sections": 10,
+        "purity": 0.6948818897637795,
+        "NMI": 0.4352043914786122,
+        "ARI": 0.23585973081012732,
+        "RI": 0.8096337477756196,
+        "purity_random": 0.3174212598425197,
+        "NMI_random": 0.04322806099394262
+      }
+    },
+    "minilm/hac/centred": {
+      "flask": {
+        "k": 55,
+        "silhouette": 0.15706488490104675,
+        "sections": 4,
+        "purity": 0.8851570964247021,
+        "NMI": 0.17041733647803417,
+        "ARI": 0.01641464978393012,
+        "RI": 0.33194360556799835,
+        "purity_random": 0.8244853737811484,
+        "NMI_random": 0.042026087681693435
+      },
+      "fastapi": {
+        "k": 60,
+        "silhouette": 0.20262819528579712,
+        "sections": 10,
+        "purity": 0.7293307086614174,
+        "NMI": 0.4411579692142637,
+        "ARI": 0.26167320053552,
+        "RI": 0.838089339644952,
+        "purity_random": 0.3174212598425197,
+        "NMI_random": 0.04322806099394262
+      }
+    }
+  },
+  "baselines": [
+    {
+      "system": "BM25F: Flask term -> FastAPI index",
+      "hit@1": 0.5,
+      "hit@3": 0.65,
+      "hit@10": 0.7,
+      "MRR": 0.5791666666666667
+    },
+    {
+      "system": "Dense LSA: Flask term -> FastAPI index",
+      "hit@1": 0.5,
+      "hit@3": 0.55,
+      "hit@10": 0.75,
+      "MRR": 0.5572222222222222
+    },
+    {
+      "system": "Dense MiniLM: Flask term -> FastAPI index",
+      "hit@1": 0.3,
+      "hit@3": 0.45,
+      "hit@10": 0.75,
+      "MRR": 0.3951388888888889
+    }
+  ],
+  "variants": [
+    {
+      "space": "tfidf",
+      "method": "kmeans",
+      "centred": "no",
+      "route": "evidence",
+      "m": 3,
+      "w": 0.5,
+      "1:1": "no",
+      "hit@1": 0.55,
+      "hit@3": 0.75,
+      "hit@10": 0.8,
+      "MRR": 0.6555555555555556,
+      "hit@3 (no restriction)": 0.8,
+      "MRR (no restriction)": 0.6708333333333333,
+      "no-match P": 1.0,
+      "no-match R": 0.2
+    },
+    {
+      "space": "tfidf",
+      "method": "kmeans",
+      "centred": "yes",
+      "route": "evidence",
+      "m": 2,
+      "w": 1.0,
+      "1:1": "no",
+      "hit@1": 0.5,
+      "hit@3": 0.65,
+      "hit@10": 0.75,
+      "MRR": 0.5875,
+      "hit@3 (no restriction)": 0.75,
+      "MRR (no restriction)": 0.6288095238095238,
+      "no-match P": 1.0,
+      "no-match R": 0.2
+    },
+    {
+      "space": "tfidf",
+      "method": "hac",
+      "centred": "no",
+      "route": "evidence",
+      "m": 2,
+      "w": 0.5,
+      "1:1": "no",
+      "hit@1": 0.6,
+      "hit@3": 0.7,
+      "hit@10": 0.8,
+      "MRR": 0.67,
+      "hit@3 (no restriction)": 0.8,
+      "MRR (no restriction)": 0.6708333333333333,
+      "no-match P": 1.0,
+      "no-match R": 0.4
+    },
+    {
+      "space": "tfidf",
+      "method": "hac",
+      "centred": "yes",
+      "route": "evidence",
+      "m": 2,
+      "w": 1.0,
+      "1:1": "no",
+      "hit@1": 0.5,
+      "hit@3": 0.75,
+      "hit@10": 0.8,
+      "MRR": 0.6238095238095238,
+      "hit@3 (no restriction)": 0.75,
+      "MRR (no restriction)": 0.6288095238095238,
+      "no-match P": NaN,
+      "no-match R": 0.0
+    },
+    {
+      "space": "lsa",
+      "method": "kmeans",
+      "centred": "no",
+      "route": "evidence",
+      "m": 3,
+      "w": 1.0,
+      "1:1": "no",
+      "hit@1": 0.45,
+      "hit@3": 0.7,
+      "hit@10": 0.85,
+      "MRR": 0.5958333333333333,
+      "hit@3 (no restriction)": 0.7,
+      "MRR (no restriction)": 0.585,
+      "no-match P": 1.0,
+      "no-match R": 0.4
+    },
+    {
+      "space": "lsa",
+      "method": "kmeans",
+      "centred": "yes",
+      "route": "evidence",
+      "m": 2,
+      "w": 0.3,
+      "1:1": "no",
+      "hit@1": 0.45,
+      "hit@3": 0.55,
+      "hit@10": 0.7,
+      "MRR": 0.5275000000000001,
+      "hit@3 (no restriction)": 0.7,
+      "MRR (no restriction)": 0.6016666666666667,
+      "no-match P": 1.0,
+      "no-match R": 0.2
+    },
+    {
+      "space": "lsa",
+      "method": "hac",
+      "centred": "no",
+      "route": "evidence",
+      "m": 1,
+      "w": 1.0,
+      "1:1": "no",
+      "hit@1": 0.6,
+      "hit@3": 0.7,
+      "hit@10": 0.7,
+      "MRR": 0.65,
+      "hit@3 (no restriction)": 0.7,
+      "MRR (no restriction)": 0.585,
+      "no-match P": 1.0,
+      "no-match R": 0.2
+    },
+    {
+      "space": "lsa",
+      "method": "hac",
+      "centred": "yes",
+      "route": "evidence",
+      "m": 2,
+      "w": 0.5,
+      "1:1": "no",
+      "hit@1": 0.55,
+      "hit@3": 0.65,
+      "hit@10": 0.8,
+      "MRR": 0.6166666666666667,
+      "hit@3 (no restriction)": 0.75,
+      "MRR (no restriction)": 0.6183333333333334,
+      "no-match P": 1.0,
+      "no-match R": 0.2
+    },
+    {
+      "space": "minilm",
+      "method": "kmeans",
+      "centred": "no",
+      "route": "evidence",
+      "m": 2,
+      "w": 0.7,
+      "1:1": "no",
+      "hit@1": 0.45,
+      "hit@3": 0.6,
+      "hit@10": 0.75,
+      "MRR": 0.5472222222222223,
+      "hit@3 (no restriction)": 0.7,
+      "MRR (no restriction)": 0.5875,
+      "no-match P": NaN,
+      "no-match R": 0.0
+    },
+    {
+      "space": "minilm",
+      "method": "kmeans",
+      "centred": "yes",
+      "route": "centroid",
+      "m": 5,
+      "w": 0.3,
+      "1:1": "no",
+      "hit@1": 0.4,
+      "hit@3": 0.5,
+      "hit@10": 0.75,
+      "MRR": 0.4868650793650794,
+      "hit@3 (no restriction)": 0.65,
+      "MRR (no restriction)": 0.5675595238095238,
+      "no-match P": 0.25,
+      "no-match R": 0.2
+    },
+    {
+      "space": "minilm",
+      "method": "hac",
+      "centred": "no",
+      "route": "evidence",
+      "m": 5,
+      "w": 0.3,
+      "1:1": "no",
+      "hit@1": 0.45,
+      "hit@3": 0.7,
+      "hit@10": 0.85,
+      "MRR": 0.5704761904761905,
+      "hit@3 (no restriction)": 0.65,
+      "MRR (no restriction)": 0.6166666666666667,
+      "no-match P": 0.0,
+      "no-match R": 0.0
+    },
+    {
+      "space": "minilm",
+      "method": "hac",
+      "centred": "yes",
+      "route": "evidence",
+      "m": 5,
+      "w": 0.7,
+      "1:1": "no",
+      "hit@1": 0.55,
+      "hit@3": 0.7,
+      "hit@10": 0.95,
+      "MRR": 0.6508333333333334,
+      "hit@3 (no restriction)": 0.65,
+      "MRR (no restriction)": 0.6142857142857143,
+      "no-match P": NaN,
+      "no-match R": 0.0
+    }
+  ],
+  "configs": {
+    "tfidf/kmeans": {
+      "m": 3,
+      "w": 0.5,
+      "one_to_one": false,
+      "route": "evidence",
+      "tau": 0.0928623117506504,
+      "build_s": 39.24752998352051,
+      "k": {
+        "flask": 55,
+        "fastapi": 50
+      }
+    },
+    "tfidf/kmeans/centred": {
+      "m": 2,
+      "w": 1.0,
+      "one_to_one": false,
+      "route": "evidence",
+      "tau": 0.04007762297987938,
+      "build_s": 53.84831190109253,
+      "k": {
+        "flask": 55,
+        "fastapi": 55
+      }
+    },
+    "tfidf/hac": {
+      "m": 2,
+      "w": 0.5,
+      "one_to_one": false,
+      "route": "evidence",
+      "tau": 0.11755223199725151,
+      "build_s": 171.7000584602356,
+      "k": {
+        "flask": 60,
+        "fastapi": 60
+      }
+    },
+    "tfidf/hac/centred": {
+      "m": 2,
+      "w": 1.0,
+      "one_to_one": false,
+      "route": "evidence",
+      "tau": 0.04783458076417446,
+      "build_s": 153.7107584476471,
+      "k": {
+        "flask": 60,
+        "fastapi": 60
+      }
+    },
+    "lsa/kmeans": {
+      "m": 3,
+      "w": 1.0,
+      "one_to_one": false,
+      "route": "evidence",
+      "tau": 0.16322287172079086,
+      "build_s": 7.099942922592163,
+      "k": {
+        "flask": 55,
+        "fastapi": 60
+      }
+    },
+    "lsa/kmeans/centred": {
+      "m": 2,
+      "w": 0.3,
+      "one_to_one": false,
+      "route": "evidence",
+      "tau": 0.10841713473200798,
+      "build_s": 7.48119854927063,
+      "k": {
+        "flask": 60,
+        "fastapi": 60
+      }
+    },
+    "lsa/hac": {
+      "m": 1,
+      "w": 1.0,
+      "one_to_one": false,
+      "route": "evidence",
+      "tau": 0.1504659652709961,
+      "build_s": 6.299924612045288,
+      "k": {
+        "flask": 60,
+        "fastapi": 60
+      }
+    },
+    "lsa/hac/centred": {
+      "m": 2,
+      "w": 0.5,
+      "one_to_one": false,
+      "route": "evidence",
+      "tau": 0.07462599873542786,
+      "build_s": 6.430968284606934,
+      "k": {
+        "flask": 60,
+        "fastapi": 60
+      }
+    },
+    "minilm/kmeans": {
+      "m": 2,
+      "w": 0.7,
+      "one_to_one": false,
+      "route": "evidence",
+      "tau": 0.40917935967445374,
+      "build_s": 11.037970066070557,
+      "k": {
+        "flask": 35,
+        "fastapi": 60
+      }
+    },
+    "minilm/kmeans/centred": {
+      "m": 5,
+      "w": 0.3,
+      "one_to_one": false,
+      "route": "centroid",
+      "tau": 0.26092251390218735,
+      "build_s": 10.195610523223877,
+      "k": {
+        "flask": 45,
+        "fastapi": 60
+      }
+    },
+    "minilm/hac": {
+      "m": 5,
+      "w": 0.3,
+      "one_to_one": false,
+      "route": "evidence",
+      "tau": 0.41753238439559937,
+      "build_s": 10.285520315170288,
+      "k": {
+        "flask": 55,
+        "fastapi": 60
+      }
+    },
+    "minilm/hac/centred": {
+      "m": 5,
+      "w": 0.7,
+      "one_to_one": false,
+      "route": "evidence",
+      "tau": 0.19887062907218933,
+      "build_s": 10.227857828140259,
+      "k": {
+        "flask": 55,
+        "fastapi": 60
+      }
+    }
+  },
+  "best": "minilm/kmeans/centred",
+  "pruning": [
+    {
+      "clusters searched": 1,
+      "docs scored": 31.45,
+      "% of FastAPI": 1.547736220472441,
+      "hit@3": 0.35,
+      "hit@10": 0.55,
+      "MRR": 0.38916666666666666,
+      "ms/query": 4.167807102203369
+    },
+    {
+      "clusters searched": 2,
+      "docs scored": 60.95,
+      "% of FastAPI": 2.999507874015748,
+      "hit@3": 0.4,
+      "hit@10": 0.65,
+      "MRR": 0.4220833333333333,
+      "ms/query": 2.738189697265625
+    },
+    {
+      "clusters searched": 3,
+      "docs scored": 92.2,
+      "% of FastAPI": 4.53740157480315,
+      "hit@3": 0.5,
+      "hit@10": 0.75,
+      "MRR": 0.48875,
+      "ms/query": 2.676510810852051
+    },
+    {
+      "clusters searched": 5,
+      "docs scored": 152.9,
+      "% of FastAPI": 7.524606299212598,
+      "hit@3": 0.5,
+      "hit@10": 0.75,
+      "MRR": 0.4868650793650794,
+      "ms/query": 2.921760082244873
+    },
+    {
+      "clusters searched": 10,
+      "docs scored": 334.4,
+      "% of FastAPI": 16.456692913385826,
+      "hit@3": 0.6,
+      "hit@10": 0.8,
+      "MRR": 0.5451190476190476,
+      "ms/query": 3.185713291168213
+    },
+    {
+      "clusters searched": 20,
+      "docs scored": 675.7,
+      "% of FastAPI": 33.25295275590551,
+      "hit@3": 0.65,
+      "hit@10": 0.85,
+      "MRR": 0.5663690476190476,
+      "ms/query": 3.961586952209472
+    },
+    {
+      "clusters searched": 60,
+      "docs scored": 2032.0,
+      "% of FastAPI": 100.0,
+      "hit@3": 0.65,
+      "hit@10": 0.8,
+      "MRR": 0.5675595238095238,
+      "ms/query": 7.6424479484558105
+    }
+  ],
+  "significance": [
+    {
+      "comparison": "minilm/kmeans/centred vs BM25F baseline",
+      "delta MRR": -0.09230158730158733,
+      "p (bootstrap)": 0.2581,
+      "p (Wilcoxon)": 0.397604195946046
+    },
+    {
+      "comparison": "minilm/kmeans/centred vs Dense LSA baseline",
+      "delta MRR": -0.07035714285714278,
+      "p (bootstrap)": 0.5068,
+      "p (Wilcoxon)": 0.5738155968466105
+    }
+  ],
+  "per_pair": [
+    {
+      "pid": "P02",
+      "flask": "abort",
+      "expected": "HTTPException",
+      "source chunk": "flask/api#flask.abort",
+      "matched cluster": "fastapi#100 [exception, httpexception, http, raise] (25 chunks; Handling Errors)",
+      "sim": 0.684,
+      "predicted": "fastapi/reference/exceptions#exceptions-httpexception-and-websocketexception",
+      "gold rank": 7
+    },
+    {
+      "pid": "P03",
+      "flask": "request.args",
+      "expected": "query parameters",
+      "source chunk": "flask/api#flask.Request.args",
+      "matched cluster": "fastapi#66 [response, responses, streaming, redirect] (72 chunks; Custom Response Classes - File, HTML, Redirect, Streaming, etc.)",
+      "sim": 0.273,
+      "predicted": "fastapi/reference/request#fastapi.Request.form",
+      "gold rank": null
+    },
+    {
+      "pid": "P05",
+      "flask": "request.files",
+      "expected": "UploadFile",
+      "source chunk": "flask/api#flask.Request.files",
+      "matched cluster": "fastapi#97 [uploadfile, upload, file, files] (25 chunks; UploadFile class)",
+      "sim": 0.703,
+      "predicted": "fastapi/tutorial/request-files#request-files",
+      "gold rank": 1
+    },
+    {
+      "pid": "P06",
+      "flask": "jsonify",
+      "expected": "JSONResponse",
+      "source chunk": "flask/api#flask.json.jsonify",
+      "matched cluster": "fastapi#50 [json, pydantic, model, data] (43 chunks; Response Model - Return Type)",
+      "sim": 0.568,
+      "predicted": "fastapi/tutorial/stream-json-lines#json-lines",
+      "gold rank": 5
+    },
+    {
+      "pid": "P08",
+      "flask": "before_request",
+      "expected": "middleware",
+      "source chunk": "flask/api#flask.Blueprint.before_app_request",
+      "matched cluster": "fastapi#92 [query, parameters, validations, parameter] (21 chunks; Request Parameters)",
+      "sim": 0.236,
+      "predicted": "no match",
+      "gold rank": null
+    },
+    {
+      "pid": "P09",
+      "flask": "test_client",
+      "expected": "TestClient",
+      "source chunk": "flask/api#flask.Flask.test_client",
+      "matched cluster": "fastapi#85 [test, testclient, tests, client] (19 chunks; Async Tests)",
+      "sim": 0.56,
+      "predicted": "fastapi/reference/testclient#fastapi.testclient.TestClient.is_closed",
+      "gold rank": 1
+    },
+    {
+      "pid": "P11",
+      "flask": "send_file",
+      "expected": "FileResponse",
+      "source chunk": "flask/api#flask.send_file",
+      "matched cluster": "fastapi#97 [uploadfile, upload, file, files] (25 chunks; UploadFile class)",
+      "sim": 0.703,
+      "predicted": "fastapi/tutorial/request-files#file-parameters-with-uploadfile",
+      "gold rank": null
+    },
+    {
+      "pid": "P12",
+      "flask": "redirect",
+      "expected": "RedirectResponse",
+      "source chunk": "flask/api#flask.Flask.redirect",
+      "matched cluster": "fastapi#92 [query, parameters, validations, parameter] (21 chunks; Request Parameters)",
+      "sim": 0.236,
+      "predicted": "no match",
+      "gold rank": null
+    },
+    {
+      "pid": "P14",
+      "flask": "set_cookie",
+      "expected": "response cookies",
+      "source chunk": "flask/api#flask.Response.set_cookie",
+      "matched cluster": "fastapi#69 [cookie, lax, samesite, httponly] (37 chunks; Custom Response Classes - File, HTML, Redirect, Streaming, etc.)",
+      "sim": 0.529,
+      "predicted": "fastapi/reference/response#fastapi.Response.set_cookie",
+      "gold rank": 1
+    },
+    {
+      "pid": "P15",
+      "flask": "request.cookies",
+      "expected": "Cookie parameters",
+      "source chunk": "flask/api#flask.Request.cookies",
+      "matched cluster": "fastapi#69 [cookie, lax, samesite, httponly] (37 chunks; Custom Response Classes - File, HTML, Redirect, Streaming, etc.)",
+      "sim": 0.529,
+      "predicted": "fastapi/reference/request#fastapi.Request.cookies",
+      "gold rank": 4
+    },
+    {
+      "pid": "P17",
+      "flask": "variable rules converters",
+      "expected": "path parameters",
+      "source chunk": "flask/quickstart#variable-rules",
+      "matched cluster": "fastapi#65 [router, apirouter, routing.py, fastapi] (38 chunks; Bigger Applications - Multiple Files)",
+      "sim": 0.316,
+      "predicted": "fastapi/tutorial/bigger-applications#path-operations-with-apirouter",
+      "gold rank": 9
+    },
+    {
+      "pid": "P18",
+      "flask": "app.config from_envvar",
+      "expected": "settings",
+      "source chunk": "flask/api#flask.Config.from_envvar",
+      "matched cluster": "fastapi#70 [path, operation, predefined, parameters] (21 chunks; Settings and Environment Variables)",
+      "sim": 0.288,
+      "predicted": "fastapi/advanced/settings#read-settings-from-env",
+      "gold rank": 1
+    },
+    {
+      "pid": "P20",
+      "flask": "stream_with_context streaming",
+      "expected": "StreamingResponse",
+      "source chunk": "flask/patterns/streaming#streaming-with-context",
+      "matched cluster": "fastapi#57 [response, fastapi, responses, fast] (32 chunks; Custom Response - HTML, Stream, File, others)",
+      "sim": 0.511,
+      "predicted": "fastapi/advanced/stream-data#a-streamingresponse-with-yield",
+      "gold rank": 1
+    },
+    {
+      "pid": "P21",
+      "flask": "celery background tasks",
+      "expected": "BackgroundTasks",
+      "source chunk": "flask/patterns/celery#integrate-celery-with-flask",
+      "matched cluster": "fastapi#58 [tasks, background, backgroundtasks, notification] (18 chunks; Background Tasks - BackgroundTasks)",
+      "sim": 0.608,
+      "predicted": "fastapi/tutorial/background-tasks#caveat",
+      "gold rank": 1
+    },
+    {
+      "pid": "P23",
+      "flask": "flask run development server",
+      "expected": "fastapi dev",
+      "source chunk": "flask/cli#run-the-development-server",
+      "matched cluster": "fastapi#73 [concepts, deployments, processes, running] (37 chunks; Deployments Concepts)",
+      "sim": 0.402,
+      "predicted": "fastapi/index#run-it",
+      "gold rank": 2
+    },
+    {
+      "pid": "P24",
+      "flask": "login_required decorator",
+      "expected": "get_current_user dependency",
+      "source chunk": "flask/patterns/viewdecorators#login-required-decorator",
+      "matched cluster": "fastapi#93 [user, model, password, username] (26 chunks; Form Models)",
+      "sim": 0.375,
+      "predicted": "fastapi/tutorial/request-forms#import-form",
+      "gold rank": 5
+    },
+    {
+      "pid": "P26",
+      "flask": "ProxyFix",
+      "expected": "behind a proxy",
+      "source chunk": "flask/quickstart#hooking-in-wsgi-middleware",
+      "matched cluster": "fastapi#73 [concepts, deployments, processes, running] (37 chunks; Deployments Concepts)",
+      "sim": 0.364,
+      "predicted": "fastapi/advanced/behind-a-proxy#how-proxy-forwarded-headers-work",
+      "gold rank": 1
+    },
+    {
+      "pid": "P27",
+      "flask": "WSGI middleware",
+      "expected": "ASGI middleware",
+      "source chunk": "flask/quickstart#hooking-in-wsgi-middleware",
+      "matched cluster": "fastapi#73 [concepts, deployments, processes, running] (37 chunks; Deployments Concepts)",
+      "sim": 0.364,
+      "predicted": "fastapi/advanced/wsgi#check-it",
+      "gold rank": null
+    },
+    {
+      "pid": "P29",
+      "flask": "url_for",
+      "expected": "url_for in templates",
+      "source chunk": "flask/templating#top~4",
+      "matched cluster": "fastapi#92 [query, parameters, validations, parameter] (21 chunks; Request Parameters)",
+      "sim": 0.236,
+      "predicted": "no match",
+      "gold rank": 3
+    },
+    {
+      "pid": "P30",
+      "flask": "application dispatching",
+      "expected": "sub applications mount",
+      "source chunk": "flask/patterns/appdispatch#dispatch-by-path",
+      "matched cluster": "fastapi#73 [concepts, deployments, processes, running] (37 chunks; Deployments Concepts)",
+      "sim": 0.355,
+      "predicted": "fastapi/advanced/sub-applications#sub-application",
+      "gold rank": 1
+    },
+    {
+      "pid": "N03",
+      "flask": "MethodView",
+      "expected": "(no match)",
+      "source chunk": "flask/api#flask.views.MethodView",
+      "matched cluster": "fastapi#65 [router, apirouter, routing.py, fastapi] (38 chunks; Bigger Applications - Multiple Files)",
+      "sim": 0.316,
+      "predicted": "fastapi/advanced/generate-clients#generate-a-typescript-client-with-custom-operation-ids",
+      "gold rank": "-"
+    },
+    {
+      "pid": "N04",
+      "flask": "instance folder",
+      "expected": "(no match)",
+      "source chunk": "flask/config#instance-folders",
+      "matched cluster": "fastapi#48 [static, staticfiles, files, templates] (36 chunks; Static Files - StaticFiles)",
+      "sim": 0.558,
+      "predicted": "fastapi/tutorial/static-files#use-staticfiles",
+      "gold rank": "-"
+    },
+    {
+      "pid": "N05",
+      "flask": "url_value_preprocessor",
+      "expected": "(no match)",
+      "source chunk": "flask/api#flask.Blueprint.app_url_value_preprocessor",
+      "matched cluster": "fastapi#92 [query, parameters, validations, parameter] (21 chunks; Request Parameters)",
+      "sim": 0.236,
+      "predicted": "no match",
+      "gold rank": "-"
+    },
+    {
+      "pid": "N06",
+      "flask": "flask shell",
+      "expected": "(no match)",
+      "source chunk": "flask/api#flask.Flask.shell_context_processor",
+      "matched cluster": "fastapi#71 [uvicorn, run, fastapi, span] (34 chunks; FastAPI)",
+      "sim": 0.318,
+      "predicted": "fastapi/deployment/docker#use-cmd-exec-form",
+      "gold rank": "-"
+    },
+    {
+      "pid": "N07",
+      "flask": "flask.g",
+      "expected": "(no match)",
+      "source chunk": "flask/templating#top~3",
+      "matched cluster": "fastapi#94 [httpconnection, request, connection, class] (28 chunks; Request class)",
+      "sim": 0.27,
+      "predicted": "fastapi/advanced/wsgi#check-it",
+      "gold rank": "-"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+# web app
+fastapi>=0.110
+uvicorn>=0.29
+jinja2>=3.1
+python-multipart>=0.0.9
+sqlalchemy[asyncio]>=2.0
+aiosqlite>=0.20
+pydantic[email]>=2.6
+pyjwt>=2.8
+pwdlib[argon2]>=0.2
+python-dotenv>=1.0
+pytz
+# IR pipeline (ir/, eval/)
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+networkx>=3.2
+beautifulsoup4>=4.12
+lxml>=5.0
+matplotlib>=3.8
+pytest>=8.0
+# dense retrieval with MiniLM (optional; without it the dense baseline is LSA)
+sentence-transformers>=2.6
+# LLM answers (optional; without GROQ_API_KEY answers are extractive)
+langchain-groq>=0.1
+# offline docs mirror (tools/build_mirror.py only)
+markdown>=3.5
+docutils>=0.20

@@ -1,0 +1,45 @@
+# Virtual environments
+devbuddy/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables
+.env
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+# rebuilt automatically
+data/index.pkl
+data/emb_minilm.npy
+data/emb_minilm.key
+*.db
+
+.env
+.venv/
+venv/
+devbuddy.db
+vectorstore/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.log
+data/raw/
+
+.env
+.venv/
+venv/
+devbuddy.db
+vectorstore/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.log
+data/raw/
+
+*.zip

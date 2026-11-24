@@ -1,0 +1,421 @@
+{
+  "judgments": "provisional (author gold patterns)",
+  "rows": [
+    {
+      "system": "BM25 (k1=1.2, b=0.75)",
+      "nDCG@10": 0.41014654296284064,
+      "P@5": 0.46,
+      "R@10": 0.25595399112092376,
+      "MAP": 0.31377371624019257,
+      "MRR": 0.6404380813898075,
+      "api": 0.6156152639318224,
+      "howto": 0.4698932045676102,
+      "cross": 0.12782789490600938,
+      "ms/q": 1.6686677932739258
+    },
+    {
+      "system": "BM25 tuned",
+      "nDCG@10": 0.43381329421790105,
+      "P@5": 0.45,
+      "R@10": 0.2484820545627975,
+      "MAP": 0.31223619814323444,
+      "MRR": 0.6995027148777149,
+      "api": 0.6964812891048136,
+      "howto": 0.4530015987291578,
+      "cross": 0.13611254198239356,
+      "ms/q": 1.7449696858723958
+    },
+    {
+      "system": "BM25F (default weights)",
+      "nDCG@10": 0.44542283562298624,
+      "P@5": 0.45666666666666667,
+      "R@10": 0.25136764512277515,
+      "MAP": 0.32871921432252044,
+      "MRR": 0.7040806878306878,
+      "api": 0.7030736305999008,
+      "howto": 0.4795464430988791,
+      "cross": 0.13649590633182646,
+      "ms/q": 1.596208413441976
+    },
+    {
+      "system": "BM25F tuned",
+      "nDCG@10": 0.4491920681298586,
+      "P@5": 0.4666666666666667,
+      "R@10": 0.25214125625024103,
+      "MAP": 0.3508076821339737,
+      "MRR": 0.7360934272698978,
+      "api": 0.687429603485532,
+      "howto": 0.4764146814252538,
+      "cross": 0.16832756358687126,
+      "ms/q": 1.5989979108174641
+    },
+    {
+      "system": "Dense LSA",
+      "nDCG@10": 0.3752556858584286,
+      "P@5": 0.4666666666666667,
+      "R@10": 0.24901984464170937,
+      "MAP": 0.35139198555505397,
+      "MRR": 0.6285843336678577,
+      "api": 0.5300409300772067,
+      "howto": 0.39877680896167744,
+      "cross": 0.1863268190403346,
+      "ms/q": 7.896951834360759
+    },
+    {
+      "system": "Dense MiniLM",
+      "nDCG@10": 0.338660558524375,
+      "P@5": 0.39333333333333337,
+      "R@10": 0.20073460918427818,
+      "MAP": 0.2600053508598314,
+      "MRR": 0.5929062811254754,
+      "api": 0.387672378192683,
+      "howto": 0.4116001352829347,
+      "cross": 0.20645174245616915,
+      "ms/q": 12.706434726715088
+    },
+    {
+      "system": "Hybrid RRF (BM25F + LSA)",
+      "nDCG@10": 0.4589656408696611,
+      "P@5": 0.47,
+      "R@10": 0.2686435224322985,
+      "MAP": 0.36583676558902567,
+      "MRR": 0.7222879435379436,
+      "api": 0.6921453884662161,
+      "howto": 0.48428731944643844,
+      "cross": 0.1855261565515861,
+      "ms/q": 10.399067401885986
+    },
+    {
+      "system": "Hybrid RRF (BM25F + MiniLM)",
+      "nDCG@10": 0.46447676817336814,
+      "P@5": 0.5066666666666667,
+      "R@10": 0.2827056399996994,
+      "MAP": 0.36211728059419623,
+      "MRR": 0.7407837301587302,
+      "api": 0.6377656722103635,
+      "howto": 0.5418088713158169,
+      "cross": 0.19659507097698248,
+      "ms/q": 14.926191171010334
+    }
+  ],
+  "tuned": {
+    "bm25": {
+      "k1": 2.1,
+      "b": 0.3
+    },
+    "bm25f": {
+      "k1": 2.1,
+      "b": 0.75,
+      "weights": {
+        "title": 3.0,
+        "heading": 2.5,
+        "body": 1.0,
+        "code": 0.5
+      }
+    },
+    "hybrid_lsa": {
+      "rrf_w": 0.8
+    },
+    "hybrid_minilm": {
+      "rrf_w": 0.8
+    }
+  },
+  "significance": {
+    "BM25F tuned vs BM25 tuned": {
+      "delta": 0.015378773911957577,
+      "p_bootstrap": 0.3881,
+      "p_wilcoxon": 0.5754260441012891,
+      "wins": 27,
+      "losses": 25,
+      "n": 60
+    },
+    "Dense LSA vs BM25F tuned": {
+      "delta": -0.07393638227143001,
+      "p_bootstrap": 0.0017,
+      "p_wilcoxon": 0.001979812383832051,
+      "wins": 13,
+      "losses": 38,
+      "n": 60
+    },
+    "Hybrid RRF (BM25F + LSA) vs BM25F tuned": {
+      "delta": 0.00977357273980245,
+      "p_bootstrap": 0.1995,
+      "p_wilcoxon": 0.09082423149687142,
+      "wins": 24,
+      "losses": 17,
+      "n": 60
+    },
+    "Hybrid RRF (BM25F + LSA) vs Dense LSA": {
+      "delta": 0.08370995501123246,
+      "p_bootstrap": 0.0001,
+      "p_wilcoxon": 0.00033093678195932253,
+      "wins": 41,
+      "losses": 12,
+      "n": 60
+    },
+    "Dense MiniLM vs BM25F tuned": {
+      "delta": -0.11053150960548364,
+      "p_bootstrap": 0.0016,
+      "p_wilcoxon": 0.002756619795711146,
+      "wins": 17,
+      "losses": 39,
+      "n": 60
+    },
+    "Hybrid RRF (BM25F + MiniLM) vs BM25F tuned": {
+      "delta": 0.015284700043509514,
+      "p_bootstrap": 0.2158,
+      "p_wilcoxon": 0.2071089392777402,
+      "wins": 27,
+      "losses": 21,
+      "n": 60
+    },
+    "Hybrid RRF (BM25F + MiniLM) vs Dense MiniLM": {
+      "delta": 0.12581620964899315,
+      "p_bootstrap": 0.0,
+      "p_wilcoxon": 5.7842797538795706e-05,
+      "wins": 44,
+      "losses": 12,
+      "n": 60
+    }
+  },
+  "type_significance": {
+    "[api] Dense LSA vs BM25F tuned": {
+      "delta": -0.1573886734083253,
+      "p_bootstrap": 0.0003,
+      "p_wilcoxon": 0.004853230851379527,
+      "wins": 2,
+      "losses": 15,
+      "n": 20
+    },
+    "[api] Hybrid RRF (BM25F + LSA) vs BM25F tuned": {
+      "delta": 0.004715784980684146,
+      "p_bootstrap": 0.5126,
+      "p_wilcoxon": 0.7531523647659145,
+      "wins": 5,
+      "losses": 8,
+      "n": 20
+    },
+    "[api] Hybrid RRF (BM25F + LSA) vs Dense LSA": {
+      "delta": 0.16210445838900944,
+      "p_bootstrap": 0.0,
+      "p_wilcoxon": 0.003090081924360667,
+      "wins": 15,
+      "losses": 2,
+      "n": 20
+    },
+    "[api] Dense MiniLM vs BM25F tuned": {
+      "delta": -0.29975722529284893,
+      "p_bootstrap": 0.0,
+      "p_wilcoxon": 0.00015509577279577017,
+      "wins": 1,
+      "losses": 18,
+      "n": 20
+    },
+    "[api] Hybrid RRF (BM25F + MiniLM) vs BM25F tuned": {
+      "delta": -0.04966393127516844,
+      "p_bootstrap": 0.0202,
+      "p_wilcoxon": 0.008984997655215593,
+      "wins": 2,
+      "losses": 13,
+      "n": 20
+    },
+    "[api] Hybrid RRF (BM25F + MiniLM) vs Dense MiniLM": {
+      "delta": 0.2500932940176805,
+      "p_bootstrap": 0.0,
+      "p_wilcoxon": 0.00015509577279577017,
+      "wins": 18,
+      "losses": 1,
+      "n": 20
+    },
+    "[howto] Dense LSA vs BM25F tuned": {
+      "delta": -0.07763787246357634,
+      "p_bootstrap": 0.0358,
+      "p_wilcoxon": 0.04785751139622271,
+      "wins": 5,
+      "losses": 15,
+      "n": 21
+    },
+    "[howto] Hybrid RRF (BM25F + LSA) vs BM25F tuned": {
+      "delta": 0.007872638021184653,
+      "p_bootstrap": 0.6327,
+      "p_wilcoxon": 0.24846555845586238,
+      "wins": 13,
+      "losses": 5,
+      "n": 21
+    },
+    "[howto] Hybrid RRF (BM25F + LSA) vs Dense LSA": {
+      "delta": 0.085510510484761,
+      "p_bootstrap": 0.0011,
+      "p_wilcoxon": 0.008009910583496094,
+      "wins": 16,
+      "losses": 5,
+      "n": 21
+    },
+    "[howto] Dense MiniLM vs BM25F tuned": {
+      "delta": -0.06481454614231907,
+      "p_bootstrap": 0.2082,
+      "p_wilcoxon": 0.22898578643798828,
+      "wins": 7,
+      "losses": 14,
+      "n": 21
+    },
+    "[howto] Hybrid RRF (BM25F + MiniLM) vs BM25F tuned": {
+      "delta": 0.06539418989056311,
+      "p_bootstrap": 0.0004,
+      "p_wilcoxon": 0.0028208603832232753,
+      "wins": 15,
+      "losses": 5,
+      "n": 21
+    },
+    "[howto] Hybrid RRF (BM25F + MiniLM) vs Dense MiniLM": {
+      "delta": 0.1302087360328822,
+      "p_bootstrap": 0.0093,
+      "p_wilcoxon": 0.014165878295898438,
+      "wins": 17,
+      "losses": 4,
+      "n": 21
+    },
+    "[cross] Dense LSA vs BM25F tuned": {
+      "delta": 0.017999255453463342,
+      "p_bootstrap": 0.5639,
+      "p_wilcoxon": 0.9749599188317098,
+      "wins": 6,
+      "losses": 8,
+      "n": 19
+    },
+    "[cross] Hybrid RRF (BM25F + LSA) vs BM25F tuned": {
+      "delta": 0.01719859296471485,
+      "p_bootstrap": 0.2077,
+      "p_wilcoxon": 0.3328797545683888,
+      "wins": 6,
+      "losses": 4,
+      "n": 19
+    },
+    "[cross] Hybrid RRF (BM25F + LSA) vs Dense LSA": {
+      "delta": -0.0008006624887484937,
+      "p_bootstrap": 0.9802,
+      "p_wilcoxon": 0.6092350686367863,
+      "wins": 10,
+      "losses": 5,
+      "n": 19
+    },
+    "[cross] Dense MiniLM vs BM25F tuned": {
+      "delta": 0.03812417886929789,
+      "p_bootstrap": 0.3751,
+      "p_wilcoxon": 0.5014474714870738,
+      "wins": 9,
+      "losses": 7,
+      "n": 19
+    },
+    "[cross] Hybrid RRF (BM25F + MiniLM) vs BM25F tuned": {
+      "delta": 0.02826750739011122,
+      "p_bootstrap": 0.0788,
+      "p_wilcoxon": 0.05462393825457164,
+      "wins": 10,
+      "losses": 3,
+      "n": 19
+    },
+    "[cross] Hybrid RRF (BM25F + MiniLM) vs Dense MiniLM": {
+      "delta": -0.009856671479186674,
+      "p_bootstrap": 0.7964,
+      "p_wilcoxon": 0.836138661741041,
+      "wins": 9,
+      "losses": 7,
+      "n": 19
+    }
+  },
+  "dev_qids": [
+    "A01",
+    "A03",
+    "A05",
+    "A08",
+    "A13",
+    "A14",
+    "A22",
+    "A24",
+    "A29",
+    "A30",
+    "H01",
+    "H04",
+    "H05",
+    "H06",
+    "H14",
+    "H17",
+    "H18",
+    "H19",
+    "H26",
+    "X01",
+    "X03",
+    "X05",
+    "X06",
+    "X09",
+    "X10",
+    "X13",
+    "X21",
+    "X22",
+    "X23",
+    "X30"
+  ],
+  "test_qids": [
+    "A02",
+    "A04",
+    "A06",
+    "A07",
+    "A09",
+    "A10",
+    "A11",
+    "A12",
+    "A15",
+    "A16",
+    "A17",
+    "A18",
+    "A19",
+    "A20",
+    "A21",
+    "A23",
+    "A25",
+    "A26",
+    "A27",
+    "A28",
+    "H02",
+    "H03",
+    "H07",
+    "H08",
+    "H09",
+    "H10",
+    "H11",
+    "H12",
+    "H13",
+    "H15",
+    "H16",
+    "H20",
+    "H21",
+    "H22",
+    "H23",
+    "H24",
+    "H25",
+    "H27",
+    "H28",
+    "H29",
+    "H30",
+    "X02",
+    "X04",
+    "X07",
+    "X08",
+    "X11",
+    "X12",
+    "X14",
+    "X15",
+    "X16",
+    "X17",
+    "X18",
+    "X19",
+    "X20",
+    "X24",
+    "X25",
+    "X26",
+    "X27",
+    "X28",
+    "X29"
+  ]
+}
